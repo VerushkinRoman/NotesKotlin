@@ -27,4 +27,16 @@
         tools:text="Content"
         />
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "created at 12.02.2022 21:00"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/modified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="modified at 13.02.2022 22:12"/>
+
 </LinearLayout>

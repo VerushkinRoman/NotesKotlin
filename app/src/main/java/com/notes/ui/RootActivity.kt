@@ -35,6 +35,7 @@ class RootActivity : AppCompatActivity(), FragmentNavigator {
                 viewBinding.container.id,
                 fragment
             )
+            .addToBackStack(null)
             .commit()
     }
 

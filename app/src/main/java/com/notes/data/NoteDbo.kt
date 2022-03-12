@@ -1,10 +1,13 @@
 package com.notes.data
 
+import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 import java.time.LocalDateTime
 
+@Parcelize
 @Entity(tableName = "notes")
 data class NoteDbo(
     @PrimaryKey(autoGenerate = true)
@@ -18,4 +21,4 @@ data class NoteDbo(
     val createdAt: LocalDateTime,
     @ColumnInfo(name = "modifiedAt")
     val modifiedAt: LocalDateTime,
-)
+) : Parcelable
